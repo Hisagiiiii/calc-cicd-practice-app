@@ -1,10 +1,13 @@
-const { add, subtract, multiply, divide } = require('../src/calc');
+const { add, add3, subtract, multiply, divide } = require('../src/calc');
 
 describe('calc', () => {
   test('add: 2 + 3 は 5 になる', () => {
     expect(add(2, 3)).toBe(5);
   });
-  
+
+  test('add: 2 + 3 + 4 は 9 になる', () => {
+    expect(add3(2, 3, 4)).toBe(9);
+  });
   test('subtract: 5 - 3 は 2 になる', () => {
     expect(subtract(5, 3)).toBe(2);
   });
