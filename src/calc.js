@@ -2,9 +2,6 @@
 function add(a, b) {
   return a + b;
 }
-function add3(a, b, c) {
-  return a + b + c;
-}
 
 function subtract(a, b) {
   return a - b;
@@ -21,4 +18,8 @@ function divide(a, b) {
   return a / b;
 }
 
-module.exports = { add, add3, subtract, multiply, divide };
+function power(base, exponent) {
+  return base ** exponent;
+}
+
+module.exports = { add, subtract, multiply, divide, power };
